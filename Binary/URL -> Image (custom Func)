@@ -1,0 +1,13 @@
+(URL as text) as text =>
+let
+    Image = "data:image;base64, " & Binary.ToText(Web.Contents(URL), BinaryEncoding.Base64)
+in
+    Image
+
+
+(ImgBinary as binary) as text =>
+let
+    Image = "data:image;base64, " & Binary.ToText(ImgBinary, BinaryEncoding.Base64)
+in
+    Image
+
